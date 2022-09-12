@@ -5,7 +5,7 @@ string voteAge(int age)
   if(age >= 18)
     str = "Eligible for Voting! ";
   else
-    str = "Eligible for Voting! ";
+    str = "not eligible for Voting! ";
 	return str;
 }
  
