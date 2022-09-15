@@ -9,7 +9,11 @@ void swap (int &num1, int &num2) //&num1 and &bnum2 are Reference variables
 }
 int main()
 {
-        int a=5,b=10;
+        int a,b;
+        cout<<"enter the value a:";
+        cin>>a;
+        cout<<"enter the value b:";
+        cin>>b;
         cout<<"\n Before swapping"<<"\n A = "<<a<<"\n B = "<<b<<endl;
         swap(a,b);
         cout<<"\n After swapping"<<"\n A = "<<a<<"\n B = "<<b<<endl;
