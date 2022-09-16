@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i;
+    float python,cprogramming,mathematics,physics,total,percentage;
+    cout<<"enter the marks in python:";
+    cin>>python;
+    cout<<"\nenter the marks in cprogramming:";
+    cin>>cprogramming;
+    cout<<"\nenter the marks in mathematics:";
+    cin>>mathematics;
+    cout<<"\nenter the marks in physics:";
+    cin>>physics;
+    total=python+cprogramming+mathematics+physics;
+        cout<<total;
+        cout<<"\n";
+         percentage=total/400*100;
+         cout<<percentage;
+    if(percentage>=75 && percentage<=100)
+    {
+        cout<<"DISTINCTION";
+    }
+    else if(percentage>=60 && percentage<75)
+    {
+        cout<<"first division";
+    }
+    else if(percentage>=50 && percentage<60)
+    {
+	
+        cout<<"second division";
+    }
+    else if(percentage>=40 && percentage<50)
+    {
+	
+        cout<<"third division";
+    }
+
+    else
+    {
+        cout<<"FAIL!!...";
+    }
+    cout<<endl;
+    return 0;
+}
