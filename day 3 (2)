@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Student
+{
+public:
+    Student(string name,string roll,string phone,string address)
+    {
+setDetails(name,roll,phone,address);
+    }
+    void setDetails(string name,string roll,string phone,string address)
+    {
+        studentName=name;
+        studentRoll=roll;
+        studentPhone=phone;
+        studentAddress=address;
+    }
+    string getDetails()
+    {
+        cout<<studentName<<endl;
+        cout<<studentRoll<<endl;
+        cout<<studentPhone<<endl;
+        cout<<studentAddress<<endl;
+    }
+    private:
+        string studentName;
+        string studentRoll;
+        string studentPhone;
+        string studentAddress;
+
+};
+int main()
+{
+   Student student1("Sam","187654332","9059508754","guntur");
+   Student student2("John","192110008","8143621559","chennai");
+   cout<<student1.getDetails()<<endl;
+   cout<<student2.getDetails()<<endl;
+return 0;
+}
